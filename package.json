@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "http://vineet192.github.io",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Vineet Kalghatgi",
   "license": "ISC",
