@@ -1,0 +1,25 @@
+@import url('../../../static/colors.css');
+
+.blog{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+}
+
+.blog > h1{
+  font-size: 45px;
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.blog-list > * {
+  width: 70%;
+}

@@ -1,0 +1,15 @@
+.contact-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 150px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.contact-bar a > * {
+    font-size: 70px;
+}

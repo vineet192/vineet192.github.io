@@ -1,0 +1,17 @@
+
+:root {
+  --title : 24px !important;
+}
+
+.parallax {
+  /* height: 350px !important; */
+  background-attachment: scroll !important;
+  background-size: contain !important;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* Project section */
+.grid{
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+}

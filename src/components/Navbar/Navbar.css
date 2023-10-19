@@ -1,0 +1,28 @@
+@import '../../static/colors.css';
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  top:0;
+  width: 100%;
+  background-color: var(--secondary2-color);
+  position: sticky;
+  z-index: 1;
+  overflow: hidden;
+}
+
+nav  * {
+  background-color: transparent;
+}
+
+a {
+  margin-left: 15px;
+  margin-right: 15px;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 25px;
+}
