@@ -10,7 +10,9 @@ import ContactBar from '../../Contact-Bar/Contact';
 function Home() {
   const aboutMeSectionRef = useRef();
 
-  const repoEndpoints = ["vineet192/Restaurant-Emenu",
+  const repoEndpoints = [
+    "vineet192/vineet192.github.io",
+    "vineet192/Restaurant-Emenu",
     "vineet192/sorting-visualiser",
     "vineet192/ExamHelper",
     "vineet192/bert-qa-server",
