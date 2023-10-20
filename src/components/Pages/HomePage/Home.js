@@ -72,8 +72,9 @@ function Home() {
       {/* About me section */}
       <section className='about-me-section' ref={aboutMeSectionRef}>
         <h1>About me</h1>
-        <p>Hey there! my name is Vineet Kalghatgi and I'm a software developer. Over the course of 2 degrees, 2 internship and a year long full-time role, I have amassed skills in various domains. However, I've got a particular affinity towards backend web development using Node.js/Express.js or Python frameworks like Django and Flask. </p>
-        <p>I adapt quick. Every role of mine has forced me to learn new tehcnologies from scratch and get good at it. So whether it was learning <a href="https://angular.io/">Angular</a> from the ground up at my internship at <a href="http://tcs.com/">Tata Consultancy Services</a> or learning an obscure functional programming language, <a href="https://github.com/idris-lang/Idris2">Idris 2</a>, for my coursework, I have always been able to improvise, adapt and overcome. </p>
+        <p>Hey there! my name is Vineet Kalghatgi and I'm a software developer. Over the course of 2 Computer Science degrees, 2 software development internships, and a year-long full-time role in the cybersecurity domain, I have amassed various skills. In my years of developing software, I've gained a particular affinity towards backend web development using Node.js/Express.js or Python frameworks like Django and Flask. </p>
+        <p></p>
+        <p>I adapt quickly. Every role of mine has forced me to learn new technologies from scratch and get good at it. So whether it was learning <a href="https://angular.io/">Angular</a> from the ground up at my internship at <a href="http://tcs.com/">Tata Consultancy Services</a> or learning an obscure functional programming language, <a href="https://github.com/idris-lang/Idris2">Idris 2</a>, for my coursework, I have always been able to improvise, adapt, and overcome. </p>
         <p>In my free time, you can catch me developing my personal project, <em>a Restaurant E-Menu Application</em>, more details below</p>
       </section>
 
