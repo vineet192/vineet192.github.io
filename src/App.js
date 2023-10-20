@@ -10,9 +10,9 @@ function App() {
     <Router>
       <Navbar />
       <Routes App>
+        <Route path={process.env.PUBLIC_URL + "/"} element={<Home />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/resume" element={<Resume />} />
-        <Route path="/" element={<Home />} />
       </Routes>
     </Router>
   );
