@@ -6,6 +6,7 @@ import ProjectCard from '../../Project-Card/Project-Card';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import EducationCard from '../../Education-Card/Education';
 import ContactBar from '../../Contact-Bar/Contact';
+import Timeline from '../../Timeline/timeline';
 
 function Home() {
   const aboutMeSectionRef = useRef();
@@ -78,6 +79,8 @@ function Home() {
         <p>In my free time, you can catch me developing my personal project, <em>a Restaurant E-Menu Application</em>, more details below</p>
       </section>
 
+      <Timeline></Timeline>
+
       <hr className='divider'></hr>
 
       {/* Project display section */}
@@ -87,24 +90,6 @@ function Home() {
         {projects.length > 0 && <div className="grid">
           {projects.map(project => project)}
         </div>}
-
-      </section>
-
-      <hr className='divider'></hr>
-
-      {/* Blog link section */}
-      <section className="edu-section">
-        <h1>My Education</h1>
-        <EducationCard school_name="University at Buffalo - SUNY"
-          school_location="Buffalo, NY"
-          gpa="3.6/4"
-          degree="MS in Computer and Information Science"
-          timeline="Aug 2022 - Dec 2023" />
-        <EducationCard school_name="Dr. Ambedkar Institute of Technology"
-          school_location="Bengaluru, KN"
-          gpa="8.84/10"
-          degree="BE in Computer Science and Engineering"
-          timeline="Aug 2017 - Aug 2021" />
 
       </section>
 
