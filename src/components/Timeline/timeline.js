@@ -8,7 +8,6 @@ export default function Timeline(props) {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting){
-                console.log(entry.target, "is in view!", entry.intersectionRatio)
                 entry.target.style.transform = "translateX(0)"
                 entry.target.style.opacity = 1
             }
