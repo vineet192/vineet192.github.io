@@ -81,7 +81,8 @@ function Home() {
 
       <Timeline></Timeline>
 
-      <hr className='divider'></hr>
+      {/* <hr className='divider'></hr> */}
+      <div className="parallax"></div>
 
       {/* Project display section */}
       <section className="project-section">

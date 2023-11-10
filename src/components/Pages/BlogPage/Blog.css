@@ -1,5 +1,3 @@
-@import url('../../../static/colors.css');
-
 .blog{
   display: flex;
   flex-direction: column;

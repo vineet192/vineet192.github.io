@@ -1,22 +1,26 @@
-@import '../../static/colors.css';
-
 nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  justify-content: space-between;
+  padding-top: 5px;
+  padding-bottom: 5px;
   top:0;
+  right:0;
   width: 100%;
   background-color: var(--secondary2-color);
   position: sticky;
   z-index: 1;
   overflow: hidden;
+  height: 50px;
 }
 
-nav  * {
-  background-color: transparent;
+.nav-row{
+  padding-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
 }
 
 a {
@@ -24,5 +28,5 @@ a {
   margin-right: 15px;
   color: var(--accent-color);
   text-decoration: none;
-  font-size: 25px;
+  font-size: 30px;
 }

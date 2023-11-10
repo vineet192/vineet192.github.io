@@ -4,6 +4,16 @@
   padding: 0;
 }
 
+:root {
+  --primary-color: #1f2123;
+  --secondary-color: white;
+  --accent-color: #3fa0ef;
+  --secondary2-color: rgba(255, 255, 255, 0.15);
+
+  --text-margin: 90px;
+}
+
+
 html,
 body,
 #root {

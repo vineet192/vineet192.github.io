@@ -1,11 +1,9 @@
-@import url('../../static/colors.css');
-
 .article-card * {
   background-color: transparent !important;
 }
 .article-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
+  transition: 0.5s;
   margin: 20px;
   cursor: pointer;
   border-radius: 10px;
@@ -15,6 +13,13 @@
 
 .article-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  color: white;
+  background-color: var(--accent-color);
+  border-color: transparent;
+}
+
+.article-card:hover .article-title, .article-card.hover .article-title{
+  color: white;
 }
 
 .article-title {

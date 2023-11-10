@@ -7,19 +7,21 @@ export default function Timeline(props) {
     const containerRef = useRef(null)
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting){
+            if (entry.isIntersecting) {
                 entry.target.style.transform = "translateX(0)"
                 entry.target.style.opacity = 1
             }
         })
+    }, {
+        threshold: 0.8
     })
 
     useEffect(() => {
 
-        if(!containerRef){
+        if (!containerRef) {
             return;
         }
-        
+
         let els = containerRef.current.querySelectorAll('.card')
         console.log(els)
 
