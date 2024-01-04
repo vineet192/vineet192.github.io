@@ -48,7 +48,8 @@
     transition: all 2s ease;
 }
 
-.card > p, li{
+.card>p,
+li {
     margin-bottom: 10px;
     margin-top: 5px;
     color: white;
@@ -75,6 +76,7 @@
     .left {
         margin-right: 200px;
         padding: 20px;
+        transform: translateX(100%);
     }
 
     .right {
