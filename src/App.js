@@ -11,8 +11,8 @@ function App() {
       <Navbar />
       <Routes App>
         <Route path={process.env.PUBLIC_URL + "/"} element={<Home />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/resume" element={<Resume />} />
+        <Route path={process.env.PUBLIC_URL + "/blog"} element={<Blog />} />
+        <Route path={process.env.PUBLIC_URL + "/resume"} element={<Resume />} />
       </Routes>
     </Router>
   );
