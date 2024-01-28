@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height:100%;
+  margin-top: 20px;
 }
 
 .blog > h1{
@@ -15,7 +15,27 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  width: 80%;
+  overflow-y: scroll;
+  max-height: 500px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--primary-color);
+  /* height: 10px; */
+  border: 1px solid var(--accent-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 10px;
 }
 
 .blog-list > * {
