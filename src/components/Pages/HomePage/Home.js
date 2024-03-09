@@ -12,26 +12,36 @@ function Home() {
   const aboutMeSectionRef = useRef();
 
   const repoEndpoints = [
-    "vineet192/vineet192.github.io",
-    "vineet192/Restaurant-Emenu",
-    "vineet192/sorting-visualiser",
-    "vineet192/ExamHelper",
-    "vineet192/bert-qa-server",
-    "vineet192/restaurant-emenu-backend"]
+    {
+      endpoint: "vineet192/vineet192.github.io",
+      screenshot: "screenshots/portfolio.png"
+    },
+    {
+      endpoint: "vineet192/Restaurant-Emenu",
+      screenshot: "screenshots/emenu.png"
+    },
+    {
+      endpoint: "vineet192/sorting-visualiser",
+      screenshot: "screenshots/sorting_visualizer.gif"
+    },
+    { endpoint: "vineet192/ExamHelper" },
+    { endpoint: "vineet192/bert-qa-server" },
+    { endpoint: "vineet192/restaurant-emenu-backend" }]
 
   const [projects, setProjects] = useState([])
 
   function initProjects() {
-    Promise.all(repoEndpoints.map(endpoint => fetch(`https://api.github.com/repos/${endpoint}`)))
+    Promise.all(repoEndpoints.map(({ endpoint, screenshot }) => fetch(`https://api.github.com/repos/${endpoint}`)))
       .then(responses => Promise.all(responses.map(res => res.json())))
       .then(repos => {
-        repos.forEach(repo => {
+        repos.forEach((repo, index) => {
           setProjects(prev => [...prev,
           <ProjectCard
             projectTitle={repo.name}
             projectDesc={repo.description ? repo.description : ""}
             projectUrl={repo.html_url}
             key={repo.name}
+            screenshot={repoEndpoints[index].screenshot}
           />])
         })
       })
@@ -84,9 +94,20 @@ function Home() {
       {/* <hr className='divider'></hr> */}
       <div className="parallax"></div>
 
+      {/* Capstone project section */}
+      <section className='capstone-project-section'>
+      <h1>Capstone project with IBM and ENG</h1>
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/1wWuwWfDwkM?si=mlLgLIzMS6xq3zwT"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </section>
+
       {/* Project display section */}
       <section className="project-section">
-        <h1>I love tinkering with different technologies</h1>
+        <h1>Personal projects</h1>
         {projects.length === 0 && <h2>Well my projects was supposed to appear here... something went wrong, try refreshing the page</h2>}
         {projects.length > 0 && <div className="grid">
           {projects.map(project => project)}
@@ -97,7 +118,7 @@ function Home() {
       <hr className='divider'></hr>
 
       <section className='contact-section'>
-        <h1>Say Hi</h1>
+        <h1>Contact me</h1>
         <ContactBar
           email="mailto:vkalghat@gmail.com"
           linkedin="https://www.linkedin.com/in/vineet-k192/"
