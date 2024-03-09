@@ -50,7 +50,7 @@ export default function Timeline(props) {
                     <h4>University at Buffalo - SUNY</h4>
                     <hr />
                     <p>MS in Computer Science</p>
-                    <p>GPA: 3.6/4</p>
+                    <p>GPA: 3.7/4</p>
                     <ul>
                         <li>Coursework: Algorithms, Information Retrieval, Blockchain, Data Intensive Computing,
                             Data Models and Query Languages, Information Retrieval
