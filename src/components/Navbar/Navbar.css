@@ -1,3 +1,5 @@
+@import url('./Navbar-mobile-portrait.css') (max-width: 961px);
+
 nav {
   display: flex;
   flex-direction: row;

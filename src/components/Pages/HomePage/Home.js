@@ -4,7 +4,6 @@ import '../../Education-Card/Education'
 import { useEffect, useRef, useState } from 'react';
 import ProjectCard from '../../Project-Card/Project-Card';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import EducationCard from '../../Education-Card/Education';
 import ContactBar from '../../Contact-Bar/Contact';
 import Timeline from '../../Timeline/timeline';
 
@@ -83,10 +82,16 @@ function Home() {
       {/* About me section */}
       <section className='about-me-section' ref={aboutMeSectionRef}>
         <h1>About me</h1>
-        <p>Hey there! my name is Vineet Kalghatgi and I'm a software developer. Over the course of 2 Computer Science degrees, 2 software development internships, and a year-long full-time role in the cybersecurity domain, I have amassed various skills. In my years of developing software, I've gained a particular affinity towards backend web development using Node.js/Express.js or Python frameworks like Django and Flask. </p>
-        <p></p>
-        <p>I adapt quickly. Every role of mine has forced me to learn new technologies from scratch and get good at it. So whether it was learning <a href="https://angular.io/">Angular</a> from the ground up at my internship at <a href="http://tcs.com/">Tata Consultancy Services</a> or learning an obscure functional programming language, <a href="https://github.com/idris-lang/Idris2">Idris 2</a>, for my coursework, I have always been able to improvise, adapt, and overcome. </p>
-        <p>In my free time, you can catch me developing my personal project, <em>a Restaurant E-Menu Application</em>, more details below</p>
+        <p>A seasoned computer science professional with a Master's degree in Computer Science from the <b>University at Buffalo</b>, specializing in full-stack web development and Machine learning.</p>
+
+        <p>Throughout my tenure as a software developer at <b>Tata Consultancy Services</b>, I spearheaded several initiatives for a prominent Swiss bank, collaborating closely with diverse teams and stakeholders.
+        </p>
+
+        <p><b>Python (Django, Flask)</b> and <b>JavaScript (React, Node.js, Express.js, Next.js)</b> are my forte, and I excel in leveraging them across the stack for web development projects.
+          From building cloud-based online menu management systems for restaurants to crafting inverted index search engines, I thrive on developing innovative solutions.
+          I am also quite proficient in <b>Java</b>.</p>
+
+        <p>I now spend my time learning <b>Go</b> and working as a student researcher at the University at Buffalo, working on an emotion-aware dialogue generation system using <b>Python</b> and <b>Large Language Models</b>.</p>
       </section>
 
       <Timeline></Timeline>
@@ -94,20 +99,10 @@ function Home() {
       {/* <hr className='divider'></hr> */}
       <div className="parallax"></div>
 
-      {/* Capstone project section */}
-      <section className='capstone-project-section'>
-      <h1>Capstone project with IBM and ENG</h1>
-        <iframe width="560" height="315"
-          src="https://www.youtube.com/embed/1wWuwWfDwkM?si=mlLgLIzMS6xq3zwT"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </section>
 
       {/* Project display section */}
       <section className="project-section">
-        <h1>Personal projects</h1>
+        <h1>Projects</h1>
         {projects.length === 0 && <h2>Well my projects was supposed to appear here... something went wrong, try refreshing the page</h2>}
         {projects.length > 0 && <div className="grid">
           {projects.map(project => project)}

@@ -1,3 +1,5 @@
+@import url('./Article-Card-mobile-portrait.css') (max-width: 961px);
+
 .article-card * {
   background-color: transparent !important;
 }

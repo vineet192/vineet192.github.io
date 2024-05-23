@@ -1,3 +1,5 @@
+@import url('./Blog-mobile-portrait.css') (max-width: 961px);
+
 .blog{
   display: flex;
   flex-direction: column;

@@ -1,3 +1,5 @@
+@import url('./Project-Card-mobile-portrait.css') (max-width: 961px);
+
 .project-card * {
   background-color: transparent !important;
 }

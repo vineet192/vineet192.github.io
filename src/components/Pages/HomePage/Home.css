@@ -1,4 +1,4 @@
-@import url('./Home-mobile-portrait.css') (max-device-width: 961px);
+@import url('./Home-mobile-portrait.css') (max-width: 961px);
 
 /*
 @media (min-width:320px)  {  smartphones, iPhone, portrait 480x320 phones }
@@ -165,7 +165,8 @@ p a {
 }
 
 .capstone-project-section iframe {
-  margin-top: 10px;
+  height:calc(30vh);
+  width: calc(30vh - 10px);
 }
 
 /* Contact section */
