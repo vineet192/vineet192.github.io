@@ -98,8 +98,13 @@ section {
 
 .grid {
   display: grid;
-  align-items: flex-start;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  /* align-items: flex-start; */
+  /* grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); */
+  grid-template-columns: 1fr 1fr;
+
+  /* grid-template-columns: 100%; */
+  align-content: stretch;
+  grid-template-rows: max-content;
 }
 
 /* Parallax scrolling div */
