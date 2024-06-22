@@ -20,12 +20,12 @@ function Home() {
       screenshot: "screenshots/emenu.png"
     },
     {
-      endpoint: "vineet192/sorting-visualiser",
-      screenshot: "screenshots/sorting_visualizer.gif"
-    },
-    {
       endpoint: "vineet192/dev-diaries",
       screenshot: "screenshots/blog_service.png"
+    },
+    {
+      endpoint: "vineet192/sorting-visualiser",
+      screenshot: "screenshots/sorting_visualizer.gif"
     },
     { endpoint: "vineet192/ExamHelper" },
     { endpoint: "vineet192/bert-qa-server" },
