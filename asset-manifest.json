@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.7018c3c4.css",
-    "main.js": "/static/js/main.a060ad33.js",
+    "main.js": "/static/js/main.e25580c5.js",
     "static/js/496.40700b11.chunk.js": "/static/js/496.40700b11.chunk.js",
     "static/media/pexels-negative-space-169573.jpg": "/static/media/pexels-negative-space-169573.1bf0964790f25ddf1c0b.jpg",
     "index.html": "/index.html",
     "main.7018c3c4.css.map": "/static/css/main.7018c3c4.css.map",
-    "main.a060ad33.js.map": "/static/js/main.a060ad33.js.map",
+    "main.e25580c5.js.map": "/static/js/main.e25580c5.js.map",
     "496.40700b11.chunk.js.map": "/static/js/496.40700b11.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7018c3c4.css",
-    "static/js/main.a060ad33.js"
+    "static/js/main.e25580c5.js"
   ]
 }
